@@ -16,8 +16,8 @@
   </div>
 </div> #}
     <h1>🏎 F1 Races in 2022 🏎</h1>
-    {% for event in schedule %}
-    <li>{{event}}
+    {% for data in data.MRData.RaceTable.Races %}
+    <li>{{data.raceName|e}}
     {% endfor %}
 </div>
 {% endblock %}
